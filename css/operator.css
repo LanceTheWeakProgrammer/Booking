@@ -1,0 +1,183 @@
+:root {
+    --orange: #d86500;
+    --orange_hover: #a34c00;
+  }
+  
+  * {
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .h-font {
+    font-family: 'Merienda', cursive;
+  }
+  
+  /* Remove default spinner styles for number inputs */
+  /* Chrome, Safari, Edge, Opera */
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  /* Firefox */
+  input[type=number] {
+    appearance: textfield;
+  }
+  
+  .custom-bg {
+    background-color: var(--orange);
+    border: 1px solid var(--orange);
+    transition: background-color 0.3s, border-color 0.3s;
+  }
+  
+  .custom-bg2 {
+      background-color: #cacaca; 
+      color: #000000; 
+  }
+  
+  .custom-bg:hover {
+    background-color: var(--orange_hover);
+    border-color: var(--orange_hover);
+  }
+  
+  .h-line {
+    width: 200px;
+    margin: auto;
+    height: 2.1px;
+  }
+  
+  #dashboard-menu {
+    position: fixed;
+    height: 100%; 
+    color: #fff;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #e8eff7; 
+  }
+   
+  ::-webkit-scrollbar-thumb {
+    background: #5A5A5A; 
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #6C757D; 
+  }
+  
+  @media screen and (max-width: 992px) {
+    #dashboard-menu {
+      height: auto;
+      width: 100%; 
+    }
+  }
+  
+  #main-content {
+    margin-top: 120px;
+  }
+
+  .modal-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+
+  #small-calendar {
+    font-size: 12px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .fc-toolbar-title {
+      font-size: 13px;
+  }
+
+  .fc-title {
+      font-size: 15px;
+  }
+
+  #calendar-mode .fc-title {
+      font-size: 30px; 
+  }
+
+  .fc-content {
+      background-color:#11a313; 
+      border-color:#11a313;
+      cursor: pointer; 
+  }
+
+  div.fc-event {
+      border: none !important;;
+      background-color:#ffffff;
+      color:#ffffff;
+      border-color:#afafaf;
+      cursor: pointer; 
+  }
+
+  .fc-content:hover {
+      background-color:#097220;   
+      border-color:#097220;
+      cursor: pointer; 
+  }
+
+  div.fc-event:hover {
+      border: none !important;;
+      background-color:#ffffff;
+      border-color:#fbfbfb;
+      cursor: pointer; 
+  }
+
+  .fc-conflicting-event {
+    background-color: #e12626 ;
+    border-color: #e12626 ; 
+    cursor: pointer; 
+  }
+  
+  .fc-conflicting-event:hover {
+    background-color: #a60d0d ;
+    border-color: #a60d0d ; 
+    color:#ffffff;
+    cursor: pointer; 
+  }
+  
+  .fc-reschedule-request-event {
+      background-color: yellow !important;
+      border-color: yellow !important;
+      color: black !important; /* Change text color to ensure visibility */
+      cursor: pointer;
+  }
+
+  .fc-reschedule-request-event:hover {
+      background-color: #ffeb3b !important; /* Lighter shade of yellow on hover */
+      border-color: #ffeb3b !important;
+      color: black !important;
+      cursor: pointer;
+  }
+
+  @keyframes shake {
+      10%, 90% {
+          transform: translateX(-1px);
+      }
+
+      20%, 80% {
+          transform: translateX(2px);
+      }
+
+      30%, 50%, 70% {
+          transform: translateX(-4px);
+      }
+
+      40%, 60% {
+          transform: translateX(4px);
+      }
+  }
+
+  .shake-animation {
+      animation: shake 1.0s infinite;
+  }
+  
+  

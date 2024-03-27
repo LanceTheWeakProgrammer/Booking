@@ -1,0 +1,116 @@
+:root {
+    --teal: #29c3ac;
+    --teal_hover: #279e8c;
+    --red: #9b1399;
+    --red_hover: #880c7cf9;
+  }
+  
+  * {
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .h-font {
+    font-family: 'Merienda', cursive;
+  }
+  /* Remove default spinner styles for number inputs */
+  /* Chrome, Safari, Edge, Opera */
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  /* Firefox */
+  input[type=number] {
+    appearance: textfield;
+  }
+  
+  /* .custom-bg {
+    background-color: var(--teal);
+    border: 1px solid var(--teal);
+    transition: background-color 0.3s, border-color 0.3s;
+  } */
+  
+  .custom-bg:hover {
+    background-color: var(--red_hover);
+    border-color: var(--red_hover);
+  }
+  
+  .custom-bg {
+    background-color: var(--red);
+    border: 1px solid var(--red);
+    transition: background-color 0.3s, border-color 0.3s;
+  }
+  
+  .red-circle {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    width: 70px;
+    height: 70px;
+    background-color: red;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+  .discount-value {
+    color: white;
+    font-weight: bold;
+    transform: rotate(-20deg);
+    display: inline-block;
+    margin: 0;
+}
+  
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #e8eff7; 
+  }
+   
+  ::-webkit-scrollbar-thumb {
+    background: #5A5A5A; 
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #6C757D; 
+  }
+  
+  .h-line {
+    width: 150px;
+    margin: 0 auto;
+    height: 1.7px;
+  }
+
+  .r-line {
+    height: 2px; 
+    width: 100%; 
+    background-color: #000;
+  }
+  
+  .navbar-nav .nav-link::before {
+      content: "";
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background-color: white;
+      transform: skew(-15deg) scaleX(0);
+      transition: all 0.3s ease;
+      transform-origin: center;
+      opacity: 0; 
+    }
+
+    .navbar-nav .nav-link:hover::before {
+      transform: skew(-15deg) scaleX(1);
+      height: 4px;
+      opacity: 1; 
+      font-weight: bold;
+    }
+
+  
+  
